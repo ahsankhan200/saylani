@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Travel Agency</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We offer a wide range of travel services including...</p>
+    </section>
+
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination">
+            <img src="destination1.jpg" alt="Destination 1">
+            <h3>Destination 1</h3>
+            <p>Description of Destination 1...</p>
+        </div>
+        <div class="destination">
+            <img src="destination2.jpg" alt="Destination 2">
+            <h3>Destination 2</h3>
+            <p>Description of Destination 2...</p>
+        </div>
+        <!-- Add more destinations as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries and bookings, please contact us at...</p>
+    </section>
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.init({
+            chatflowid: "2e078922-3b03-46b5-ae62-c54fb1f2bb54",
+            apiHost: "http://localhost:3000",
+        })
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Travel Agency. All rights reserved.</p>
+    </footer>
+</body>
+</html>
